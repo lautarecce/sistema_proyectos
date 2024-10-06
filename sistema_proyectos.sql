@@ -107,9 +107,9 @@ INSERT INTO sector (nombre_sector) VALUES
 
 -- Insertar datos en la tabla estado_proyecto
 INSERT INTO estado_proyecto (nombre_estado) VALUES 
-('En curso'),
+('En progreso'),
 ('Finalizado'),
-('Suspendido');
+('En planificación');
 
 -- Insertar datos en la tabla usuario
 INSERT INTO usuario (nombre, apellido, email, password, rol_id, sector_id) VALUES 
