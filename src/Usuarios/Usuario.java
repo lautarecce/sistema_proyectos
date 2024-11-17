@@ -4,22 +4,25 @@ import Entidades.Entidad;
 
 // Clase Usuario que hereda de Entidad, representa un usuario con información personal y laboral
 public class Usuario extends Entidad {
+
     private String nombre;
     private String apellido;
     private String email;
     private String telefono;
     private String contraseña;
     private String sectorTrabajo;
+    private int rolId; 
 
     // Constructor que inicializa el usuario con sus atributos principales
-    public Usuario(String idUsuario, String nombre, String apellido, String email, String telefono, String contraseña, String sectorTrabajo) {
-        super(idUsuario); // Llama al constructor de la clase base Entidad con el idUsuario
+    public Usuario(String idUsuario, String nombre, String apellido, String email, String telefono, String contraseña, String sectorTrabajo, int rolId) {
+        super(idUsuario);
         this.nombre = nombre;
         this.apellido = apellido;
         this.email = email;
         this.telefono = telefono;
         this.contraseña = contraseña;
         this.sectorTrabajo = sectorTrabajo;
+        this.rolId = rolId;
     }
 
     // Métodos Getters y Setters para acceder y modificar los atributos del usuario
@@ -56,7 +59,7 @@ public class Usuario extends Entidad {
     }
 
     public String getContraseña() {
-        return contraseña ;
+        return contraseña;
     }
 
     public void setContraseña(String contraseña) {
@@ -69,6 +72,14 @@ public class Usuario extends Entidad {
 
     public void setSectorTrabajo(String sectorTrabajo) {
         this.sectorTrabajo = sectorTrabajo;
+    }
+
+    public int getRolId() { 
+        return rolId;
+    }
+
+    public void setRolId(int rolId) {
+        this.rolId = rolId;
     }
 
     // Método para modificar algunos datos del usuario

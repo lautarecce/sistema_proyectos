@@ -11,7 +11,7 @@ public class Proyecto extends Entidad {
 
     // Constructor de la clase Proyecto
     public Proyecto(String idProyecto, String nombre, String descripcion, Date fechaInicio) {
-        super(idProyecto); // Llama al constructor de la clase padre con el id del proyecto
+        super(idProyecto);
         this.nombre = nombre; 
         this.descripcion = descripcion; 
         this.fechaInicio = fechaInicio; 

@@ -4,6 +4,7 @@ import Entidades.Entidad;
 
 // Clase Tarea que hereda de Entidad, y representa las tareas del sistema que se asignan a los usuarios.
 public class Tarea extends Entidad {
+
     private String nombre;
     private String estado;
     private String idProyecto;
@@ -11,7 +12,7 @@ public class Tarea extends Entidad {
 
     // Constructor que inicializa los atributos de Tarea
     public Tarea(String idTarea, String nombre, String estado, String idProyecto, String idUsuario) {
-        super(idTarea); // Llama al constructor de la clase base Entidad
+        super(idTarea);
         this.nombre = nombre;
         this.estado = estado;
         this.idProyecto = idProyecto;
@@ -19,7 +20,6 @@ public class Tarea extends Entidad {
     }
 
     // Métodos getter y setter para acceder y modificar los atributos de las tareas
-
     public String getNombre() {
         return nombre;
     }

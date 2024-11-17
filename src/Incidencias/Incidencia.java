@@ -9,7 +9,7 @@ public class Incidencia extends Entidad {
 
     // Constructor de la clase Incidencia
     public Incidencia(String idIncidencia, String idProyecto, String descripcion) {
-        super(idIncidencia); // Llama al constructor de la clase padre (Entidad)
+        super(idIncidencia);
         this.idProyecto = idProyecto; 
         this.descripcion = descripcion; 
     }
